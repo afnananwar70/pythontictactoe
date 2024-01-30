@@ -1,0 +1,240 @@
+Row_1 = ["_", "_", "_"]
+Row_2 = ["_", "_", "_"]
+Row_3 = ["_", "_", "_"]
+print(Row_1)
+print(Row_2)
+print(Row_3)
+count = 0
+while count < 8:
+    player_O = input("Player O: Enter a row: 1, 2 or 3: ")
+    player_O_input = int(player_O)
+    if player_O_input != 1 and player_O_input != 2 and player_O_input != 3:
+        print("Invalid, try again") 
+    if player_O_input == 1:
+        player_O_column = input("Player O: Enter a column: 1, 2 or 3: ")
+        player_O_column_input = int(player_O_column)
+        if player_O_column_input != 1 and player_O_column_input != 2 and player_O_column_input != 3:
+            print("Invalid, try again") 
+        if player_O_column_input == 1:
+            if Row_1[0] == "X" or Row_1[0] == "O":
+                print("This position is already taken try another")
+            else:
+                Row_1[0] = "O"
+                count += 1
+                print(Row_1)
+                print(Row_2)
+                print(Row_3)
+        elif player_O_column_input == 2:
+            if Row_1[1] == "X" or Row_1[1] == "O":
+                print("This position is already taken try another")
+            else:
+                Row_1[1] = "O"
+                count += 1
+                print(Row_1)
+                print(Row_2)
+                print(Row_3)
+        elif player_O_column_input == 3:
+            if Row_1[2] == "X" or Row_1[2] == "O":
+                print("This position is already taken try another")
+            else:
+                Row_1[2] = "O"
+                count += 1
+                print(Row_1)
+                print(Row_2)
+                print(Row_3)
+    elif player_O_input == 2:
+        player_O_column = input("Player O: Enter a column: 1, 2 or 3: ")
+        player_O_column_input = int(player_O_column)
+        if player_O_column_input != 1 and player_O_column_input != 2 and player_O_column_input != 3:
+            print("Invalid, try again") 
+        if player_O_column_input == 1:
+            if Row_2[0] == "X" or Row_2[0] == "O":
+                print("This position is already taken try another")
+            else:
+                Row_2[0] = "O"
+                count += 1
+                print(Row_1)
+                print(Row_2)
+                print(Row_3)
+        elif player_O_column_input == 2:
+            if Row_2[1] == "X" or Row_2[1] == "O":
+                print("This position is already taken try another")
+            else:
+                Row_2[1] = "O"
+                count += 1
+                print(Row_1)
+                print(Row_2)
+                print(Row_3)
+        elif player_O_column_input == 3:
+            if Row_2[2] == "X" or Row_2[2] == "O":
+                print("This position is already taken try another")
+            else:
+                Row_2[2] = "O"
+                count += 1
+                print(Row_1)
+                print(Row_2)
+                print(Row_3)
+    elif player_O_input == 3:
+        player_O_column = input("Player O: Enter a column: 1, 2 or 3: ")
+        player_O_column_input = int(player_O_column)
+        if player_O_column_input != 1 and player_O_column_input != 2 and player_O_column_input != 3:
+            print("Invalid, try again") 
+        if player_O_column_input == 1:
+            if Row_3[0] == "X" or Row_3[0] == "O":
+                print("This position is already taken try another")
+            else:
+                Row_3[0] = "O"
+                count += 1
+                print(Row_1)
+                print(Row_2)
+                print(Row_3)
+        elif player_O_column_input == 2:
+            if Row_3[1] == "X" or Row_3[1] == "O":
+                print("This position is already taken try another")
+            else:
+                Row_3[1] = "O"
+                count += 1
+                print(Row_1)
+                print(Row_2)
+                print(Row_3)
+        elif player_O_column_input == 3:
+            if Row_3[2] == "X" or Row_3[2] == "O":
+                print("This position is already taken try another")
+            else:
+                Row_3[2] = "O"
+                count += 1
+                print(Row_1)
+                print(Row_2)
+                print(Row_3)
+    if Row_1[0] == "O" and Row_1[1] == "O" and Row_1[2] == "O":
+        print("Player O is the winner!!!")
+    elif Row_2[0] == "O" and Row_2[1] == "O" and Row_3[2] == "O":
+        print("Player O is the winner!!!")
+    elif Row_3[0] == "O" and Row_3[1] == "O" and Row_3[2] == "O":
+        print("Player O is the winner!!!")
+    elif Row_1[0] == "O" and Row_2[0] == "O" and Row_3[0] == "O":
+        print("Player O is the winner!!!")
+    elif Row_1[1] == "O" and Row_2[1] == "O" and Row_3[1] == "O":
+        print("Player O is the winner!!!")
+    elif Row_1[2] == "O" and Row_2[2] == "O" and Row_3[2] == "O":
+        print("Player O is the winner!!!")
+    elif Row_1[0] == "O" and Row_2[1] == "O" and Row_3[2] == "O":
+        print("Player O is the winner!!!")
+    elif Row_1[2] == "O" and Row_2[1] == "O" and Row_3[0] == "O":
+        print("Player O is the winner!!!")
+    player_X = input("Player X: Enter a row: 1, 2 or 3: ")
+    player_X_input = int(player_X)
+    if player_X_input != 1 and player_X_input != 2 and player_X_input != 3:
+            print("Invalid, try again") 
+    if player_X_input == 1:
+        player_X_column = input("Player X: Enter a column: 1, 2 or 3: ")
+        player_X_column_input = int(player_X_column)
+        if player_X_column_input != 1 and player_X_column_input != 2 and player_X_column_input != 3:
+            print("Invalid, try again") 
+        if player_X_column_input == 1:
+            if Row_1[0] == "X" or Row_1[0] == "O":
+                print("This position is already taken try another")
+            else:
+                Row_1[0] = "X"
+                count += 1
+                print(Row_1)
+                print(Row_2)
+                print(Row_3)
+        if player_X_column_input == 2:
+            if Row_1[1] == "X" or Row_1[1] == "O":
+                print("This position is already taken try another")
+            else:
+                Row_1[1] = "X"
+                count += 1
+                print(Row_1)
+                print(Row_2)
+                print(Row_3)
+        if player_X_column_input == 3:
+            if Row_1[2] == "X" or Row_1[2] == "O":
+                print("This position is already taken try another")
+            else:
+                Row_1[2] = "X"
+                count += 1
+                print(Row_1)
+                print(Row_2)
+                print(Row_3)
+    elif player_X_input == 2:
+        player_X_column = input("Player X: Enter a column: 1, 2 or 3: ")
+        player_X_column_input = int(player_X_column)
+        if player_X_column_input != 1 and player_X_column_input != 2 and player_X_column_input != 3:
+            print("Invalid, try again")
+        if player_X_column_input == 1:
+            if Row_2[0] == "X" or Row_2[0] == "O":
+                print("This position is already taken try another")
+            else:
+                Row_2[0] = "X"
+                count += 1
+                print(Row_1)
+                print(Row_2)
+                print(Row_3)
+        if player_X_column_input == 2:
+            if Row_2[1] == "X" or Row_2[1] == "O":
+                print("This position is already taken try another")
+            else:
+                Row_2[1] = "X"
+                count += 1
+                print(Row_1)
+                print(Row_2)
+                print(Row_3)
+        if player_X_column_input == 3:
+            if Row_2[2] == "X" or Row_2[2] == "O":
+                print("This position is already taken try another")
+            else:
+                Row_2[2] = "X"
+                count += 1
+                print(Row_1)
+                print(Row_2)
+                print(Row_3)
+    elif player_X_input == 3:
+        player_X_column = input("Player x: Enter a column: 1, 2 or 3: ")
+        player_X_column_input = int(player_X_column)
+        if player_X_column_input != 1 and player_X_column_input != 2 and player_X_column_input != 3:
+            print("Invalid, try again")
+        if player_X_column_input == 1:
+            if Row_3[0] == "X" or Row_3[0] == "O":
+                print("This position is already taken try another")
+            else:
+                Row_3[0] = "X"
+                count += 1
+                print(Row_1)
+                print(Row_2)
+                print(Row_3)
+        if player_X_column_input == 2:
+            if Row_3[1] == "X" or Row_3[1] == "O":
+                print("This position is already taken try another")
+            else:
+                Row_3[1] = "X"
+                count += 1
+                print(Row_1)
+                print(Row_2)
+                print(Row_3)
+        if player_X_column_input == 3:
+            if Row_3[2] == "X" or Row_3[2] == "O":
+                print("This position is already taken try another")
+            else:
+                Row_3[2] = "X"
+                count += 1
+                print(Row_1)
+                print(Row_2)
+                print(Row_3)
+    if Row_1[0] == "X" and Row_1[1] == "X" and Row_1[2] == "X":
+        print("Player X is the winner!!!")
+    elif Row_2[0] == "X" and Row_2[1] == "X" and Row_3[2] == "X":
+        print("Player X is the winner!!!")
+    elif Row_3[0] == "X" and Row_3[1] == "X" and Row_3[2] == "X":
+        print("Player X is the winner!!!")
+    elif Row_1[0] == "X" and Row_2[0] == "X" and Row_3[0] == "X":
+        print("Player X is the winner!!!")
+    elif Row_1[1] == "X" and Row_2[1] == "X" and Row_3[1] == "X":
+        print("Player X is the winner!!!")
+    elif Row_1[2] == "X" and Row_2[2] == "X" and Row_3[2] == "X":
+        print("Player X is the winner!!!")
+    elif Row_1[0] == "X" and Row_2[1] == "X" and Row_3[2] == "X":
+        print("Player X is the winner!!!")
+    elif Row_1[2] == "X" and Row_2[1] == "X" and Row_3[2] == "X":
+        print("Player X is the winner!!!")
